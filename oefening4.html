@@ -1,0 +1,95 @@
+<html>
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="assets/js/robot-arm.js"></script>
+        <script>
+
+            var canvas = document.getElementById("canvas");
+            var robotArm = new RobotArm(canvas);
+            robotArm.speed=1000;
+            
+            robotArm.loadLevel("exercise 4");
+            robotArm.grab()
+          robotArm.moveRight()
+          robotArm.moveRight()
+          robotArm.drop()
+          robotArm.moveLeft()
+          robotArm.moveLeft()
+          robotArm.grab()
+          for (var i = 1; i <= 3; i++){
+           	robotArm.moveRight()
+           }
+          robotArm.drop()
+          for (var i = 1; i <= 4; i++){
+           	robotArm.moveLeft()
+           }
+          robotArm.grab()
+          robotArm.moveRight()
+          robotArm.drop()
+          robotArm.moveRight()
+          robotArm.moveRight()
+          robotArm.grab()
+          robotArm.moveLeft()
+          robotArm.moveLeft()
+          robotArm.drop()
+          robotArm.moveRight()
+          robotArm.grab()
+          robotArm.moveLeft()
+          robotArm.drop()
+
+//            robotArm.grab();
+//            for(var i=2; i<2; i++){
+//                robotArm.moveRight();
+//                robotArm.drop();
+//            }
+           
+
+//            for(var i=2; i<2; i++ ){
+ //               robotArm.moveLeft();
+//            }
+//            robotArm.grab();
+//            for(var i=3; i<3; i++){
+//                robotArm.moveRight();
+//            }
+//            robotArm.drop();
+
+
+
+ //           robotArm.moveRight();
+//            robotArm.moveRight();
+//            robotArm.drop();
+
+//            robotArm.moveLeft();
+//            robotArm.moveLeft();
+//            robotArm.grab();
+//            robotArm.moveRight();
+//            robotArm.moveRight();
+//            robotArm.moveRight();
+//            robotArm.drop();
+
+
+
+//            robotArm.moveLeft();
+//           robotArm.moveLeft();
+//            robotArm.moveLeft(); 
+//            robotArm.grab();
+//            robotArm.moveRight();
+//            robotArm.drop();
+
+//            robotArm.moveRight();
+//            robotArm.moveRight();
+//            robotArm.grab();
+//            robotArm.moveLeft();
+//            robotArm.moveLeft();
+//            robotArm.drop(); 
+
+//            robotArm.moveRight();
+//            robotArm.grab();
+//            robotArm.moveLeft();
+//            robotArm.drop();
+
+
+            robotArm.run();
+        </script>
+    </body>
+</html>
